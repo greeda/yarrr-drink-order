@@ -1,0 +1,73 @@
+.slots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.slot {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+  background: #f7f8fa;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.slot.active {
+  border-color: var(--primary);
+  background: #fff;
+}
+
+.slotLabel {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.slotValue {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.hint {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 12px 2px;
+}
+
+.menuList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menuItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 13px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.menuItemActive {
+  border-color: var(--primary);
+  background: #faf6f3;
+  color: var(--primary);
+}
+
+.check {
+  font-weight: 800;
+  color: var(--primary);
+}

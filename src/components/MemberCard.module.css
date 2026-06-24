@@ -1,0 +1,109 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  /* 모바일 터치 타깃: 카드 전체가 선택 영역 */
+  padding: 14px 8px 10px;
+  min-height: 138px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: border-color 0.1s ease, background 0.1s ease, transform 0.08s ease;
+}
+
+.card:active {
+  transform: scale(0.97);
+}
+
+.selected {
+  border-color: var(--primary);
+  background: #faf6f3;
+  box-shadow: 0 2px 10px rgba(91, 58, 41, 0.12);
+}
+
+.deleteMode {
+  border-color: var(--danger);
+  border-style: dashed;
+}
+
+/* 선택 상태 표시 (원형 체크) — 큰 카드 탭으로 토글 */
+.indicator {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  background: #fff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.1s ease, border-color 0.1s ease;
+}
+
+.selected .indicator {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.indicatorDelete {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+  color: #fff;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.2;
+  word-break: keep-all;
+}
+
+.menu {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  font-size: 11px;
+  line-height: 1.25;
+}
+
+.first {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.second {
+  color: var(--text-muted);
+}
+
+.empty {
+  color: #b3b8c0;
+  font-weight: 600;
+}
+
+.menuBtn {
+  width: 100%;
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 8px;
+  padding: 7px 4px;
+  min-height: 32px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--primary);
+  white-space: nowrap;
+}
+
+.menuBtn:active {
+  background: #f1f2f4;
+}

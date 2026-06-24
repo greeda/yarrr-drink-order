@@ -1,0 +1,17 @@
+# Netlify 배포 설정
+# 저장소(Yarrr)를 Netlify에 연결하면 커밋 push 시마다 자동 빌드/배포된다.
+
+[build]
+  # pnpm은 package.json의 "packageManager" 필드를 통해 corepack으로 자동 활성화된다.
+  command = "pnpm build"
+  publish = "dist"
+
+[build.environment]
+  # Vite 7은 Node 20.19+ / 22.12+ 필요
+  NODE_VERSION = "22"
+
+# 단일 페이지 앱(SPA) 폴백: 모든 경로를 index.html로
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

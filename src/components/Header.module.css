@@ -1,0 +1,44 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 14px;
+  color: #fff;
+}
+
+.back {
+  border: none;
+  background: var(--fg-soft);
+  color: inherit;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 22px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.brand {
+  flex: 1;
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.orderer {
+  flex-shrink: 0;
+  border: 1px solid var(--fg-border);
+  background: var(--fg-soft);
+  color: inherit;
+  border-radius: 999px;
+  padding: 7px 13px;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}

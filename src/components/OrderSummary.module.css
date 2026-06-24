@@ -1,0 +1,127 @@
+.summary {
+  margin: 0 16px 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.orderer {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary);
+  background: #faf6f3;
+  border-radius: 999px;
+  padding: 5px 10px;
+  white-space: nowrap;
+}
+
+.empty {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 4px 0 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table th {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  padding: 0 0 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.thName {
+  text-align: left;
+}
+
+.thNum {
+  text-align: right;
+}
+
+.table td {
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f2f4;
+}
+
+.tdName {
+  text-align: left;
+  font-weight: 700;
+}
+
+.tdNum {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+}
+
+.totals {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.totalRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.totalCount {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.totalPrice {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.copyBtn {
+  width: 100%;
+  margin-top: 14px;
+  border: none;
+  border-radius: 10px;
+  padding: 13px;
+  font-size: 14px;
+  font-weight: 800;
+  background: var(--primary);
+  color: #fff;
+  transition: background 0.12s ease, transform 0.08s ease;
+}
+
+.copyBtn:active {
+  transform: scale(0.98);
+}
+
+.copied {
+  background: #2e9e5b;
+}
+
+.note {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin: 12px 0 0;
+}

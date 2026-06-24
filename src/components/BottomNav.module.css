@@ -1,0 +1,39 @@
+.nav {
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 8px 8px calc(8px + env(safe-area-inset-bottom));
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  background: transparent;
+  padding: 8px 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  border-radius: 10px;
+}
+
+.icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.active {
+  color: var(--primary);
+  background: #faf6f3;
+}
+
+.activeDanger {
+  color: var(--danger);
+  background: #fdeaea;
+}

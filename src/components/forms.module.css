@@ -1,0 +1,40 @@
+.input {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 15px;
+  outline: none;
+}
+
+.input:focus {
+  border-color: var(--primary);
+}
+
+.btn {
+  flex: 1;
+  border: none;
+  border-radius: 10px;
+  padding: 13px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.primary:disabled {
+  opacity: 0.45;
+}
+
+.secondary {
+  background: #eceef1;
+  color: var(--text);
+}
+
+.danger {
+  background: var(--danger);
+  color: #fff;
+}
