@@ -2,10 +2,6 @@
 
 커피 브랜드별로 프로젝트 인원의 음료 주문을 받아 정리하고, 메신저 전달용 주문 목록을 복사할 수 있는 모바일 웹앱.
 
-- **React 19 + TypeScript + Vite**
-- 상태: Context + useReducer (localStorage 영속화)
-- 스타일: CSS Modules
-
 ## 개발
 
 이 환경에는 글로벌 `pnpm`이 없어 corepack으로 실행한다.
@@ -27,13 +23,3 @@ corepack pnpm@latest-10 run build # 타입체크 + 프로덕션 빌드 (dist/)
 - 주문 요약: 주문자명·주문내역·단가·수량·금액·총 갯수·총 가격
 - **주문목록 복사**: `음료명 x갯수` + 총 잔수/가격을 클립보드로 복사 (메신저 전달용)
 - 주문 내역은 브랜드별로 분리되어 localStorage에 저장
-
-## 배포 (Netlify)
-
-`netlify.toml`에 빌드 설정이 포함되어 있다.
-
-- Build command: `pnpm build`
-- Publish directory: `dist`
-- Node: 22
-
-GitHub 저장소를 Netlify에 연결하면 push할 때마다 자동 배포된다. 자세한 절차는 아래 "배포 절차" 참고.
